@@ -1,16 +1,16 @@
-package com.example;
+package com.example.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/exam01")
-public class Exam01Controller {
+@RequestMapping("/exam02")
+public class Exam02Controller {
 
 	@RequestMapping("")
 	public String index(){
-		return "exam01";
+		return "exam02";
 	}
 	
 	@RequestMapping("/receive-form")
@@ -19,3 +19,5 @@ public class Exam01Controller {
 		return "exam01-result";
 	}
 }
+
+
