@@ -16,7 +16,7 @@ public class Exam02Controller {
 	@RequestMapping("/receive-form")
 	public String receiveForm(String name, Model model){
 		model.addAttribute("name",name);
-		return "exam01-result";
+		return "exam02-result";
 	}
 }
 
