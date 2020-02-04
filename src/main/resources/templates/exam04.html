@@ -5,11 +5,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form th:action="@{/exam04/receive-form}" method="post">
-		名前:<input type="text" name="name"><br>
-		年齢:<input type="text" name="age"><br>
+	<form th:action="@{/exam04/receive-form}" method="post" th:object="${userForm}">
+		<div th:errors="*{name}" style="color:red"></div>
+		名前:<input type="text" name="name" th:field="*{name}"><br>
+		<div th:errors="*{age}" style="color:red"></div>
+		年齢:<input type="text" name="age" th:field="*{age}"><br>
+		<div th:errors="*{comment}" style="color:red"></div>
 		コメント:<br>
-		<textarea rows="4" cols="30"></textarea><br>
+		<textarea rows="4" cols="30" name="comment" th:field="*{comment}"></textarea><br>
 		<button type="submit">登録</button>
 	</form>
 </body>
