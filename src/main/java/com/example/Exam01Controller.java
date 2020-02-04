@@ -12,5 +12,8 @@ public class Exam01Controller {
 		return "exam01";
 	}
 	
-	
+	@RequestMapping("/receive-form")
+	public String receiveForm(){
+		return "exam01-result";
+	}
 }
