@@ -1,3 +1,4 @@
+<!-- ■カンマ -->
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -9,6 +10,9 @@
 	<br>
 	■税抜き価格<br>
 	<span th:text="${application.nonTaxPrice}"></span><br>
+	<!-- ■3桁区切りにする。 -->
+	<!-- ■区切りにはカンマ -->
+	<!-- ■「#」はThymeleafのクラスライブラリのマーク -->
 	<span th:text="${#numbers.formatInteger(application.nonTaxPrice,2,'COMMA')}"></span>円<br>
 	
 	<br>

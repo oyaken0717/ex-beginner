@@ -1,6 +1,5 @@
 package com.example.controller;
 
-
 import javax.servlet.ServletContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +17,6 @@ public class Exam03Controller {
 		return "exam03";
 	}
 	
-//	@RequestMapping("/receive-form")
-//	public String receiveForm(Integer item1,Integer item2,Integer item3){
-//		Integer nonTaxPrice = item1 + item2 + item3;
-//		Integer taxPrice = (int) (nonTaxPrice * 1.1);
-//		application.setAttribute("nonTaxPrice", nonTaxPrice);
-//		application.setAttribute("taxPrice", taxPrice);
-//		return "exam03-result";
-//	}
-
 	@RequestMapping("/receive-form")
 	public String receiveForm(Integer item1,Integer item2,Integer item3){
 		Integer nonTaxPrice = item1 + item2 + item3;
